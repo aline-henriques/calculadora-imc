@@ -1,0 +1,174 @@
+* { 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #78a0d4;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#img img {
+    width: 15rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #313e4f;
+    background-color: #89b1dc;
+    border-radius: 10px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 1.80rem;
+}
+
+.input-box label {
+    font-size: 1rem;
+    color: #313e4f;
+    font-weight: 550;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5880b4e2;
+    padding: 0.3rem;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #e3ebf2;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#calculate {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #f3b842;
+    color: #313e4f;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #313e4f;
+    padding: 0.85rem;
+}
+
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#bmi span:last-child {
+   font-size: 0.85rem;
+   color: #313e4f
+}
+
+#description {
+    width: 15.5rem;
+}
+
+#more_info {
+    text-align: center;
+    border-top: 1px solid #313e4f;
+    padding-top: 2rem;
+}
+
+#more_info a {
+    color: #313e4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.90rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#more_info a:hover {
+    color: #07090b;
+}
+
+.hidden {
+    display: none;
+}
+
+.normal {
+    color: #16a34a
+}
+
+.attention {
+    color: red
+}
+
+@media screen and (max-width: 1024px) {
+    #img {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculator {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+}
